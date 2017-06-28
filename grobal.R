@@ -1,8 +1,5 @@
 library(RODBC)
 
-channel<-odbcConnect("bi_uat",uid="bi",pwd="bi91wutong")
-
-
 # platform report
 
 p_data <- sqlQuery(channel, "select register_num,asset_sale_amt,first_trade_num from bi.bi_dds_main_plat_report_m")
